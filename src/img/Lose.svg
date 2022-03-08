@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="Lose.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.54047838"
+     inkscape:cx="435.72511"
+     inkscape:cy="515.28426"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="-49.955745"
+       y="364.49192"
+       width="889.95235"
+       height="199.82298"
+       id="rect51564" />
+    <rect
+       x="-83.731072"
+       y="351.93216"
+       width="1235.0333"
+       height="303.52514"
+       id="rect37552" />
+    <rect
+       x="-118.22468"
+       y="347.51409"
+       width="1231.5863"
+       height="335.41747"
+       id="rect31540" />
+    <linearGradient
+       id="linearGradient11724"
+       inkscape:swatch="gradient">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop11720" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop11722" />
+    </linearGradient>
+    <rect
+       x="-371.55663"
+       y="191.01151"
+       width="1534.6336"
+       height="525.9358"
+       id="rect3752" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text31538"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:'Comic Sans MS';font-style:normal;font-weight:bold;font-size:192.00000242px;white-space:pre;shape-inside:url(#rect31540);-inkscape-font-specification:'Comic Sans MS Bold';font-stretch:normal;font-variant:normal" />
+    <rect
+       style="fill:#ac0000;fill-opacity:0.96761101;stroke-width:0.264583"
+       id="rect48502"
+       width="267.77591"
+       height="154.69321"
+       x="-25.455845"
+       y="46.016331" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text51562"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:160px;line-height:1.25;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS Bold';white-space:pre;shape-inside:url(#rect51564);fill:#fff900;fill-opacity:1;stroke:none"><tspan
+         x="-49.955078"
+         y="503.51126"
+         id="tspan67230">YOU LOSE!</tspan></text>
+  </g>
+</svg>
