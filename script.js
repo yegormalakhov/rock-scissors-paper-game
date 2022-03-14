@@ -8,16 +8,19 @@ const compChoice = document.querySelector("#compChoice");
 userChoices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     userInput = e.target.id;
-    userChoice.textContent = `You chose ${userInput}`;
-    compChoice.textContent = `Computer chose ${computerChoice}`;
-    console.log(`you threw ${userInput}`);
-    console.log(`Computer threw ${computerChoice}`);
+    // userChoice.textContent = `You chose ${userInput}`;
+    // compChoice.textContent = `Computer chose ${computerChoice}`;
+    // console.log(`you threw ${userInput}`);
+    // console.log(`Computer threw ${computerChoice}`);
+
+    determineWinner(userInput, computerChoice);
   });
 });
 
 start.addEventListener("click", () => {
-  userChoice.textContent = "";
   userInput = "";
+  userChoice.textContent = "";
+  resultOutput.textContent = "";
   compChoice.textContent = "";
   playGame();
 });
@@ -36,34 +39,39 @@ const getComputerChoice = () => {
 };
 // console.log(getComputerChoice());
 
-//   const determineWinner = (userChoice, computerChoice) => {
-
-//   if (userChoice === computerChoice){
-//     return "The game is a tie!";
-//       }
-//   if ( userChoice === 'rock'){
-//     if (computerChoice === 'paper'){
-//     return "Computer won";
-//     } else {
-//     return 'Player won';
-//     }
-//   }
-//    if ( userChoice === 'paper'){
-//     if (computerChoice === 'scissors'){
-//       return "Computer won";
-//     } else {
-//       return 'Player won';
-//     }
-//   }
-//   if (userChoice === 'scissors') {
-//     if (computerChoice === 'rock'){
-//       return "Computer won";
-//     } else {
-//       return 'Player won';
-//     }
-
-//   }
-// }
+const determineWinner = (userInput, computerChoice) => {
+  if (userInput === computerChoice) {
+    resultOutput.textContent = "Its a tie!";
+    return "The game is a tie!";
+  }
+  if (userInput === "rock") {
+    if (computerChoice === "paper") {
+      resultOutput.textContent = "Skynet won! Die human! Hahaha";
+      return "Computer won";
+    } else {
+      resultOutput.textContent = "You won! Humanity will prevail!";
+      return "Player won";
+    }
+  }
+  if (userInput === "paper") {
+    if (computerChoice === "scissors") {
+      resultOutput.textContent = "Skynet won! Die human! Hahaha";
+      return "Computer won";
+    } else {
+      resultOutput.textContent = "You won! Humanity will prevail!";
+      return "Player won";
+    }
+  }
+  if (userInput === "scissors") {
+    if (computerChoice === "rock") {
+      resultOutput.textContent = "Skynet won! Die human! Hahaha";
+      return "Computer won";
+    } else {
+      resultOutput.textContent = "You won! Humanity will prevail!";
+      return "Player won";
+    }
+  }
+};
 
 //   // console.log(determineWinner('rock', 'scissors'));
 let computerChoice;
@@ -71,7 +79,7 @@ const playGame = () => {
   computerChoice = getComputerChoice();
   // //   console.log("You threw: " + userChoice);
   console.log("Computer threw: " + computerChoice);
-  //   console.log(determineWinner(userChoice, computerChoice));
+  //
 };
 //   playGame();
 
