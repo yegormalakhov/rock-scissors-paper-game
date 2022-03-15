@@ -1,7 +1,6 @@
 let userInput;
 const userChoices = document.querySelectorAll(".choices");
 const start = document.querySelector("#start");
-const userChoice = document.querySelector("#userChoice");
 const resultOutput = document.querySelector("#result");
 const compChoice = document.querySelector("#compChoice");
 const screenImg = document.querySelector(".computer_screen");
@@ -18,7 +17,6 @@ userChoices.forEach((choice) => {
 
 start.addEventListener("click", () => {
   userInput = "";
-  userChoice.textContent = "";
   resultOutput.textContent = "";
   compChoice.textContent = "";
   start.textContent = "Restart";
