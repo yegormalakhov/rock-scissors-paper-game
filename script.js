@@ -92,7 +92,7 @@ const determineWinner = (userInput, computerChoice) => {
 let computerChoice;
 const playGame = () => {
   computerChoice = getComputerChoice();
-  console.log("Computer threw: " + computerChoice);
+  // console.log("Computer threw: " + computerChoice);
   clearScreenChoice();
   screenImg.classList.add("skynet_emoji");
   userChoices.forEach((choice) => (choice.disabled = false));
