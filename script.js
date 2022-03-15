@@ -9,10 +9,7 @@ const screenImg = document.querySelector(".computer_screen");
 userChoices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     userInput = e.target.id;
-    // userChoice.textContent = `You chose ${userInput}`;
-    // compChoice.textContent = `Computer chose ${computerChoice}`;
-    // console.log(`you threw ${userInput}`);
-    // console.log(`Computer threw ${computerChoice}`);
+    userChoices.forEach((choice) => (choice.disabled = true));
     clearSkynetEmoji();
     addChoiceToScreen(computerChoice);
     determineWinner(userInput, computerChoice);
@@ -24,6 +21,7 @@ start.addEventListener("click", () => {
   userChoice.textContent = "";
   resultOutput.textContent = "";
   compChoice.textContent = "";
+  start.textContent = "Restart";
   playGame();
 });
 
@@ -57,8 +55,8 @@ const addChoiceToScreen = (computerChoice) => {
     screenImg.classList.add("scissors");
   }
 };
-// console.log(getComputerChoice());
 
+//determine the winner
 const determineWinner = (userInput, computerChoice) => {
   if (userInput === computerChoice) {
     resultOutput.textContent = "Its a tie!";
@@ -93,31 +91,11 @@ const determineWinner = (userInput, computerChoice) => {
   }
 };
 
-//   // console.log(determineWinner('rock', 'scissors'));
 let computerChoice;
 const playGame = () => {
   computerChoice = getComputerChoice();
-  // //   console.log("You threw: " + userChoice);
   console.log("Computer threw: " + computerChoice);
   clearScreenChoice();
   screenImg.classList.add("skynet_emoji");
-  //
+  userChoices.forEach((choice) => (choice.disabled = false));
 };
-//   playGame();
-
-// NOT needed original
-
-// function getUserChoice(userInput) {
-//   userInput = userInput.toLowerCase();
-//   if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb') {
-//     return userInput;
-//   } else {
-//     console.log("Please give a correct option");
-//   }
-// }
-
-// if(userChoice === 'bomb'){
-//   return "You won";
-// }
-// from const playGame
-// // //   const userChoice = getUserChoice('bomb');
