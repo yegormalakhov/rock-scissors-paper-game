@@ -4,6 +4,7 @@ const start = document.querySelector("#start");
 const userChoice = document.querySelector("#userChoice");
 const resultOutput = document.querySelector("#result");
 const compChoice = document.querySelector("#compChoice");
+const screenImg = document.querySelector(".computer_screen");
 
 userChoices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
@@ -12,7 +13,8 @@ userChoices.forEach((choice) => {
     // compChoice.textContent = `Computer chose ${computerChoice}`;
     // console.log(`you threw ${userInput}`);
     // console.log(`Computer threw ${computerChoice}`);
-
+    clearSkynetEmoji();
+    addChoiceToScreen(computerChoice);
     determineWinner(userInput, computerChoice);
   });
 });
@@ -35,6 +37,24 @@ const getComputerChoice = () => {
       return "paper";
     case 2:
       return "scissors";
+  }
+};
+
+//screen image change
+const clearSkynetEmoji = () => screenImg.classList.remove("skynet_emoji");
+const clearScreenChoice = () => {
+  screenImg.classList.remove("rock");
+  screenImg.classList.remove("paper");
+  screenImg.classList.remove("scissors");
+};
+
+const addChoiceToScreen = (computerChoice) => {
+  if (computerChoice === "rock") {
+    screenImg.classList.add("rock");
+  } else if (computerChoice === "paper") {
+    screenImg.classList.add("paper");
+  } else if (computerChoice === "scissors") {
+    screenImg.classList.add("scissors");
   }
 };
 // console.log(getComputerChoice());
@@ -79,6 +99,8 @@ const playGame = () => {
   computerChoice = getComputerChoice();
   // //   console.log("You threw: " + userChoice);
   console.log("Computer threw: " + computerChoice);
+  clearScreenChoice();
+  screenImg.classList.add("skynet_emoji");
   //
 };
 //   playGame();
